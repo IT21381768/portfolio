@@ -1,16 +1,9 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import './index.scss';
 import 'sweetalert2/dist/sweetalert2.css'; 
-import Swal from 'sweetalert2'; 
-import cv from '../../assets/images/yenuli.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faPhone, faMagnet, faBook, faGraduationCap, faDownload } from '@fortawesome/free-solid-svg-icons'
 import liquor from '../../assets/images/liquor.png'
 import bookStore from '../../assets/images/bookStore.png'
 import emp from '../../assets/images/emp.png'
@@ -32,7 +25,6 @@ const Projects = () => {
     };
   }, []);
 
-  const form = useRef();
 
   const projectsData = [
     {
@@ -47,7 +39,25 @@ const Projects = () => {
       technologies: 'Web system based - HTML , CSS , JS, PHP, MY SQL',
       responsibility: 'Responsibility - Login and Registration',
     },
-    // Add other projects data here
+     {
+      imgSrc: emp,
+      title: 'EMPLOYEE MANAGEMENT SYSTEM',
+      technologies: 'Web Application - MongoDB, Express, ReactJS, NodeJS',
+      responsibility: 'Responsibility - Full Project',
+    },
+     {
+      imgSrc: app,
+      title: 'E - COMMERCE APP',
+      technologies: 'Mobile Application - Kotlin , Firebase',
+      responsibility: 'Responsibility - Advertisement Management',
+    },
+     {
+      imgSrc: login,
+      title: 'EMPLOYEE MANAGEMENT SYSTEM',
+      technologies: 'Web system based - Java , MY SQL',
+      responsibility: 'Responsibility - Login and Registration',
+    },
+    
   ];
 
   const handleImageClick = (index) => {
