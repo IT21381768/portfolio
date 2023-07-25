@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-        No M9<br/>1st Lane<br/>Isurupura<br/>Malabe<br />
+        No M9<br/>1st Lane<br/>Isurupura<br/>Malabe<br />Phone No: 076 8742129
           <br />
         </div>
         <div className="map-wrap">

@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import './index.scss';
 import 'sweetalert2/dist/sweetalert2.css';
-import cv from '../../assets/images/yenuli.jpg'
+import cv from '../../assets/images/cv.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
@@ -45,7 +45,24 @@ const Cv = () => {
         </div>
 
         <div className="map-wrap">
-          <img src={cv} alt="developer" />
+          {/* <img src={cv} alt="developer" /> */}
+          <div class="letter-image">
+            <div class="animated-mail">
+              <div class="back-fold"></div>
+              <div class="letter"><img src={cv} alt="developer" />
+                <div class="letter-border"></div>
+                <div class="letter-title"></div>
+                <div class="letter-context"></div>
+                <div class="letter-stamp">
+                  <div class="letter-stamp-inner"></div>
+                </div>
+              </div>
+              <div class="top-fold"></div>
+              <div class="body"></div>
+              <div class="left-fold"></div>
+            </div>
+            <div class="shadow"></div>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
